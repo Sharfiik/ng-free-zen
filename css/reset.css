@@ -1,9 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
 }
 
 ul,
@@ -12,9 +9,16 @@ ol {
 }
 
 button {
+  color: inherit;
+  font-size: inherit;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+select {
+  border: none;
+  appearance: none;
 }
 
 a {
@@ -30,8 +34,12 @@ h5,
 h6,
 p {
   line-height: inherit;
-  font-size: 100%;
-  font-weight: inherit;
+  font-size: inherit;
+  font-weight: 400;
   color: inherit;
   text-align: inherit;
+}
+
+img {
+  width: 100%;
 }
