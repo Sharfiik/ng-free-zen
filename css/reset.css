@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  color: inherit;
+  text-align: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+select {
+  appearance: none;
+  border: none;
+}
+
+input {
+  appearance: none;
+  background: none;
+  border: none;
+}
