@@ -3,29 +3,6 @@
   padding: 0;
 }
 
-ul,
-ol {
-  list-style: none;
-}
-
-button {
-  color: inherit;
-  font-size: inherit;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-select {
-  border: none;
-  appearance: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 h1,
 h2,
 h3,
@@ -40,6 +17,35 @@ p {
   text-align: inherit;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+select {
+  appearance: none;
+  border: none;
+}
+
+input {
+  appearance: none;
+  background: none;
+  border: none;
 }
