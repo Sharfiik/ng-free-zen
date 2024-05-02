@@ -1,15 +1,10 @@
 .header {
-  border-bottom: 1px solid;
-  width: 320px;
-  height: 50px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #AAA;
 }
 
 .header__wrapper {
-  width: 290px;
-  height: 30px;
-  margin: 10px 15px;
   display: flex;
-  align-items: center;
 }
 
 .header__logo {
@@ -17,37 +12,47 @@
   height: 30px;
 }
 
+.header__logo img {
+  height: 100%;
+}
+
+/* .header__nav {} */
+
 .header__actions {
+  margin-left: auto;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .header__lang {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 50px;
   height: 30px;
-  background: url('/assets/icons/arrow.svg');
-  background-repeat: no-repeat;
-  background-position: right 8px center;
-  background-size: 9px 6px;
-  margin: 10px 0 10px 67px;
-  padding: 8px 0 8px 8px;
+  border: 1px solid #000;
   border-radius: 4px;
-  border: 1px solid;
+  overflow: hidden;
+}
+
+.header__lang img {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 6px;
+}
+
+.header__lang select {
+  padding-left: 8px;
+  height: 100%;
+  width: 100%;
 }
 
 .header__theme {
   width: 26px;
   height: 26px;
-  margin: 12px 0 12px 20px;
-}
-
-.header__burger {
-  width: 30px;
-  height: 20px;
-  background: url('/assets/icons/burger.svg');
-  margin: 3px 0 3px 20px;
-}
-
-.header__nav {
-  display: none;
 }
