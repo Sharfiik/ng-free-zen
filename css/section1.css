@@ -1,16 +1,10 @@
 .download {
-  width: 320px;
-  height: 600px;
-  padding: 29px 15px 30px;
-  border: 3px dashed orangered;
+  padding: 29px 15px 30px; 
 }
 
 .download__wrapper {
-  /* display: flex;
-  flex-wrap: wrap; */
   width: 290px;
-  height: 540px;
-  border: 2px dashed red;
+  height: 540px
 }
 
 /* .download__text-block {} */
@@ -18,7 +12,7 @@
 .download__title {
   width: 290px;
   height: 82px;
-  font-family: 'Nunito' sans-serif;
+  font-family: 'Nunito';
   font-weight: 700;
   font-size: 30px;
   line-height: 40.92px;
@@ -27,9 +21,9 @@
 .download__copy {
   width: 100%;
   height: 62px;
-  /* font-family: ; */
+  font-family: 'Nunito';
+  font-weight: 400;
   margin-top: 10px;
-  /* border: 2px dashed blue; */
 }
 
 .download__links {
@@ -39,7 +33,6 @@
   width: 150px;
   height: 103px;
   margin-top: 20px;
-  /* border: 2px dashed green; */
 }
 
 .download__link {
@@ -52,7 +45,6 @@
   height: 230px;
   margin-top: 30px;
   border-radius: 20px;
-  /* border: 2px dashed yellow; */
 }
 
 .download__image-block img {
