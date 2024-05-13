@@ -1,5 +1,19 @@
 .menu {
   display: none;
+  background: #fff;
+  /* border: 1px dashed red; */
 }
 
-/* .menu__item {} */
+.menu.active {
+  display: block;
+  position: fixed;
+  top: 51px;
+  left: 0;
+  right: 0;
+}
+
+.menu__item {
+  padding: 24px 15px;
+  font-size: 24px;
+  border-bottom: 1px solid #aaa;
+}
