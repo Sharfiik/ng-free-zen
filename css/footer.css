@@ -2,28 +2,37 @@
   padding: 30px 15px;
   color: #fff;
   background: #484848;
-  border: 4px dashed red;
 }
 
 .footer__wrapper {
   display: grid;
   gap: 30px;
-  border: 2px dashed blue;
 }
 
 .footer__columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  border: 2px dashed aqua;
 }
 
 .footer__info {
-  border: 2px dashed aqua;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* .footer__logo {} */
+.footer__logo img {
+  display: block;
+  width: 216px;
+  /* height: 23px; */
+}
 
-/* .footer__copy {} */
+.footer__copy {
+  font-size: 12px;
+  font-weight: 400;
+}
 
-/* .footer__dev {} */
+.footer__dev img {
+  display: block;
+  height: 46px;
+}
