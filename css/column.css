@@ -1,15 +1,27 @@
 .column {
-  border: 1px dashed red;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.column__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .column img {
-  /* display: block; */
-  width: 40px;
+  display: block;
   height: 40px;
 }
 
-/* .column__title {} */
-
-/* .column__list {} */
-
-/* .column__item {} */
+.column__item {
+  display: flex;
+}
