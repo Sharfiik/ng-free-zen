@@ -1,0 +1,29 @@
+.footer {
+  padding: 30px 15px;
+  color: #fff;
+  background: #484848;
+  border: 4px dashed red;
+}
+
+.footer__wrapper {
+  display: grid;
+  gap: 30px;
+  border: 2px dashed blue;
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  border: 2px dashed aqua;
+}
+
+.footer__info {
+  border: 2px dashed aqua;
+}
+
+/* .footer__logo {} */
+
+/* .footer__copy {} */
+
+/* .footer__dev {} */
