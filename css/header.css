@@ -1,15 +1,24 @@
 .header {
-  padding: 10px 15px;
-  border-bottom: 1px solid #AAA;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #aaa;
 }
 
 .header__wrapper {
+  height: 50px;
+  padding: 0 15px;
   display: flex;
+  align-items: center;
+  /* border: 1px dashed red; */
 }
 
 .header__logo {
   width: 77px;
   height: 30px;
+  /* border: 1px dashed red; */
 }
 
 .header__logo img {
@@ -23,6 +32,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  /* border: 1px dashed red; */
 }
 
 .header__lang {
