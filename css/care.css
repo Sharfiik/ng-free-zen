@@ -15,8 +15,12 @@
   font-weight: 700;
 }
 
-.care__copy {
+.care__copy:first-of-type {
   margin-top: 20px;
+}
+
+.care__copy {
+  margin-top: 10px;
 }
 
 .care__image-block {
