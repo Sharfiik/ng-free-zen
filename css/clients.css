@@ -1,0 +1,13 @@
+.clients {
+  padding: 30px 15px;
+}
+
+/* .clients__wrapper {} */
+
+.clients__brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* .clients__brand {} */
