@@ -8,11 +8,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  font-size: 14px;
-  font-weight: 400;
 }
 
-.clients__brand {
-  display: flex;
-  width: 130px;
-}
+/* .clients__brand {} */
