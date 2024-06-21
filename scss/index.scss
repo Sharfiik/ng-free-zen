@@ -1,16 +1,15 @@
 @import 'reset';
 @import 'fonts';
-// <link rel="stylesheet" href="css/global.css" />
-// <link rel="stylesheet" href="css/header.css" />
-// <link rel="stylesheet" href="css/menu.css" />
-// <link rel="stylesheet" href="css/burger.css" />
-// <link rel="stylesheet" href="css/download.css" />
-// <link rel="stylesheet" href="css/warranty.css" />
-// <link rel="stylesheet" href="css/care.css" />
-// <link rel="stylesheet" href="css/cashback.css" />
-// <link rel="stylesheet" href="css/clients.css" />
-// <link rel="stylesheet" href="css/footer.css" />
-// <link rel="stylesheet" href="css/column.css" />
-// <link rel="stylesheet" href="css/modal.css" />
-// <link rel="stylesheet" href="css/form.css" />
-
+@import 'global';
+@import 'header';
+@import 'menu';
+@import 'burger';
+@import 'download';
+@import 'warranty';
+@import 'care';
+@import 'cashback';
+@import 'clients';
+@import 'footer';
+@import 'column';
+@import 'modal';
+@import 'form';
