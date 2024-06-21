@@ -1,0 +1,48 @@
+/* modal */
+.modal {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__body {
+  position: relative;
+  width: calc(100vw - 30px);
+  padding: 30px 20px;
+  display: grid;
+  gap: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.modal__close {
+  position: absolute;
+  right: -5px;
+  top: -34px;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__close img {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 700;
+}
