@@ -375,36 +375,18 @@ img {
 }
 
 /* clients */
-.cashback {
+.clients {
   padding: 30px 15px;
 }
 
-/* .cashback__wrapper {} */
-/* .cashback__text-block {} */
-.cashback__title {
-  font-size: 26px;
-  font-weight: 700;
+/* .clients__wrapper {} */
+.clients__brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
-.cashback__copy:first-of-type {
-  margin-top: 20px;
-}
-
-.cashback__copy {
-  margin-top: 10px;
-}
-
-.cashback__button {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  border: 1px solid #aaa;
-  border-radius: 30px;
-}
-
+/* .clients__brand {} */
 /* footer */
 .footer {
   padding: 30px 15px;
