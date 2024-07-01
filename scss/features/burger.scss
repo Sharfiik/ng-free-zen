@@ -1,8 +1,8 @@
+/* burger */
 .burger {
   position: relative;
   width: 30px;
   height: 18px;
-  /* border: 1px dashed orange; */
 }
 
 .burger.active::before {
