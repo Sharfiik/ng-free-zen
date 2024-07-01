@@ -1,9 +1,31 @@
 .app {
   &.light {
     --color-primary: #000;
+    --bg-primary: #fff;
+    --bg-menu: #fff;
+    --bg-brands-primary: #000;
+    --bg-links-primary: #222;
+    --bg-burger: #000;
+    --bg-color-select: #fff;
+    --bb-primary: #aaa;
+    --color-copy-primary: #000;
+    --color-menu: #000;
+    --color-select: #000;
+    --color-arrow: #000;
   }
-
-  &.night {
-
+  
+  &.dark {
+    --color-primary: #fff;
+    --bg-primary: #484848;
+    --bg-menu: #484848;
+    --bg-brands-primary: #fff;
+    --bg-burger: #fff;
+    --bg-links-primary: #484848;
+    --bg-color-select: #484848;
+    --bb-primary: #fff;
+    --color-copy-primary: #fff;
+    --color-select: #fff;
+    --color-menu: #fff;
+    --color-arrow: #fff;
   }
 }

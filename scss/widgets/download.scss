@@ -1,6 +1,7 @@
 /* download */
 .download {
   padding: 30px 15px;
+  color: var(--color-copy-primary);
 
   &__wrapper {
     display: flex;
@@ -31,6 +32,8 @@
     display: block;
     width: 150px;
     height: 44px;
+    background: var(--bg-links-primary);
+    border-radius: 5px;
   }
   
   &__image-block {
