@@ -9,9 +9,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_center;
   }
   
   &__body {
@@ -30,9 +28,7 @@
     top: -34px;
     height: 34px;
     width: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_center;
   }
   
   &__close img {

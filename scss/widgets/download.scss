@@ -4,8 +4,7 @@
   color: var(--color-copy-primary);
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     gap: 30px;
   }
   
@@ -23,8 +22,7 @@
   &__links {
     margin-top: 20px;
     width: fit-content;
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     gap: 15px;
   }
   

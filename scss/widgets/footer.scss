@@ -16,8 +16,7 @@
   }
   
   &__info {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     gap: 10px;
   }
   

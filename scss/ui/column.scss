@@ -1,7 +1,6 @@
 /* column */
 .column {
-  display: flex;
-  flex-direction: column;
+  @include flex_column;
   gap: 20px;
 
   &__title {
@@ -10,8 +9,7 @@
   }
   
   &__list {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     gap: 10px;
     font-size: 14px;
     font-weight: 400;
