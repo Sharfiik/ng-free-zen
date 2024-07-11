@@ -1,0 +1,21 @@
+/* clients */
+.clients {
+  padding: 30px 15px;
+  color: var(--color-copy-primary);
+
+  /* .clients__wrapper {} */
+  
+  &__brands {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    color: var(--bg-brands-primary);
+  }
+
+  &__brands svg {
+    fill: currentColor;
+  }
+  
+  /* .clients__brand {} */
+}
+

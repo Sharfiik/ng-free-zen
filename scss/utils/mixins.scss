@@ -1,0 +1,33 @@
+/*mixin*/
+@mixin font_face(
+  $fontPath, 
+  $fileName, 
+  $fontFamily, 
+  $fontWeight 
+) {
+  @font-face {
+    font-family: $fontFamily;
+    src: url('#{$fontPath}/#{$fileName}.woff2') format('woff2');
+    src: url('#{$fontPath}/#{$fileName}.woff') format('woff');
+    src: url('#{$fontPath}/#{$fileName}.ttf') format('truetype');
+    font-weight: $fontWeight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex_align_center {
+  display: flex;
+  align-items: center;
+}

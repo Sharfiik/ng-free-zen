@@ -1,0 +1,50 @@
+/* download */
+.download {
+  padding: 30px 15px;
+  color: var(--color-copy-primary);
+
+  &__wrapper {
+    @include flex_column;
+    gap: 30px;
+  }
+  
+  /* .download__text-block {} */
+  
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  &__copy {
+    margin-top: 20px;
+  }
+  
+  &__links {
+    margin-top: 20px;
+    width: fit-content;
+    @include flex_column;
+    gap: 15px;
+  }
+  
+  &__link {
+    display: block;
+    width: 150px;
+    height: 44px;
+    background: var(--bg-links-primary);
+    border-radius: 5px;
+  }
+  
+  &__image-block {
+    height: 72vw;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  &__image-block img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+

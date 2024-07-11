@@ -1,0 +1,76 @@
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--bb-primary);
+
+  &__wrapper {
+    // display: flex;
+    // align-items: center;
+    @include flex_align_center;
+    padding: 0 15px;
+    height: 50px;
+  }
+  
+  &__logo {
+    width: 77px;
+    height: 30px;
+    color: var(--color-primary);
+  }
+  
+  &__logo svg {
+    height: 100%;
+    fill: currentColor;
+  }
+  
+  /* .header__nav {} */
+  
+  &__actions {
+    margin-left: auto;
+    // display: flex;
+    // align-items: center;
+    @include flex_align_center;
+    gap: 20px;
+  }
+  
+  &__lang {
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    @include flex_align_center;
+    width: 50px;
+    height: 30px;
+    border: 1px solid var(--color-select);
+    color: var(--color-arrow);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  &__lang svg {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 6px;
+    fill: currentColor;
+  }
+  
+  &__lang select {
+    padding-left: 8px;
+    height: 100%;
+    width: 100%;
+    color: var(--color-select);
+    background: var(--bg-color-select);
+  }
+  
+  &__theme {
+    width: 26px;
+    height: 26px;
+  }
+}
+

@@ -1,0 +1,27 @@
+/* column */
+.column {
+  @include flex_column;
+  gap: 20px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  &__list {
+    @include flex_column;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .column img {
+    display: block;
+    height: 40px;
+  }
+  
+  &__item {
+    display: flex;
+  }
+}
+
