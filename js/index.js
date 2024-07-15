@@ -14,3 +14,18 @@ const $orderCloseBtn = document.querySelector('#order-close');
 // Слушатели
 $orderOpenBtn.addEventListener('click', handleOrderOpenBtnClick);
 $orderCloseBtn.addEventListener('click', handleOrderCloseBtnClick);
+
+
+// Burger
+const $burger = document.querySelector('#burger');
+const $menu = document.querySelectorAll('#menu');
+
+$burger.addEventListener('click', function() {
+  this.classList.toggle('active')
+});
+
+function toggleBurger() {
+    $menu.forEach((line) => line.classList.toggle('active'));
+};
+
+$burger.addEventListener('click', toggleBurger);
