@@ -178,7 +178,6 @@ img {
 .burger.active::before {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
-  transition: all 2s;
 }
 .burger.active span {
   display: none;
@@ -186,7 +185,6 @@ img {
 .burger.active::after {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
-  transition: all 2s;
 }
 .burger::before {
   content: "";
@@ -197,6 +195,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  transition: all 0.5s;
 }
 .burger span {
   display: block;
@@ -213,6 +212,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: all 0.5s;
 }
 
 /* download */
