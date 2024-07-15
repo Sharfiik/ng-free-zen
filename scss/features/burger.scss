@@ -7,7 +7,7 @@
   &.active::before {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
-    transition: all 2s;
+    transition: all 2ms;
   }
   
   &.active span {
@@ -17,7 +17,7 @@
   &.active::after {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
-    transition: all 2s;
+    transition: all 2ms;
   }
   
   &::before {
