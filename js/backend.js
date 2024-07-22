@@ -9,11 +9,6 @@ const download = {
   },
 };
 
-console.log(download);
-console.log(download.title);
-console.log(download.texts[0]);
-console.log(download.images)
-
 const warranty = {
   title: '1-year warranty boost',
   texts: [
@@ -26,12 +21,6 @@ const warranty = {
   },
 };
 
-console.log(warranty);
-console.log(warranty.title);
-console.log(warranty.texts[0]);
-console.log(warranty.texts[1]);
-console.log(warranty.images)
-
 const care = {
   title: 'ZEN Care',
   texts: [
@@ -43,13 +32,6 @@ const care = {
     description: 'Card',
   },
 };
-
-console.log(care);
-console.log(care.title);
-console.log(care.texts[0]);
-console.log(care.texts[1]);
-console.log(care.texts[2]);
-console.log(care.images)
 
 const cashback = {
   title: 'and cashback!',
