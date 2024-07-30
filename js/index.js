@@ -1,6 +1,7 @@
 import { handleThemeButtonClick } from './handlers.js';
 import { handleOrderOpenBtnClick } from './handlers.js';
 import { handleOrderCloseBtnClick } from './handlers.js';
+import { primaryInfo, download, warranty, care, cashback, clients, secondaryInfo } from './data.js';
 
 // Theme
 const $themeButton = document.querySelector('#theme');
