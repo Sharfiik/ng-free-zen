@@ -2,4 +2,6 @@
 
 - HTML  
 - CSS  
-- JS  
+- JavaScript  
+- TypeScript
+- Jest
