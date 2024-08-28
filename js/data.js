@@ -34,7 +34,10 @@ export const data = {
     ],
   },
   download: {
-    title: 'Peaceful shopping mindful money',
+    title: {
+      content: 'Peaceful shopping mindful money',
+      priority: 1,
+    },
     texts: [
       'See how we can help with making your shopping experience and money management more ZEN.'
     ],
