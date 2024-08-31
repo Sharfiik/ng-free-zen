@@ -34,9 +34,12 @@ export const data = {
     ],
   },
   download: {
-    title: 'Peaceful shopping mindful money',
+    title: {
+      content: 'Peaceful shopping mindful money',
+      priority: 1,
+    },
     texts: [
-      'See how we can help with making your shopping experience and money management more ZEN.'
+      'See how we can help with making your shopping experience and money management more ZEN.',
     ],
     links: [
       {
@@ -49,7 +52,7 @@ export const data = {
       },
     ],
     image: {
-      source: './asssts/images/1.jpg',
+      source: './assets/images/1.jpg',
       description: 'Bag and device',
     },
   },
@@ -60,7 +63,7 @@ export const data = {
       'When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.'
     ],
     image: {
-      source: './asssts/images/2.jpg',
+      source: './assets/images/2.jpg',
       description: 'Basket',
     },
   },
@@ -72,7 +75,7 @@ export const data = {
       'But, here comes ZEN Care: a free, built-in shopping protection.'
     ],
     image: {
-      source: './asssts/images/3.jpg',
+      source: './assets/images/3.jpg',
       description: 'Card',
     },
   },
