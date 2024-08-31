@@ -1,0 +1,16 @@
+/**
+ * @typedef {import('./types.ts').ImageData} ImageData
+ */
+
+/**
+ * @function Image
+ * @param {ImageData} data
+ * @returns {string} HTML
+ */
+
+export const Image = (data) => `
+  <img
+    src="${data.source}"
+    alt="${data.description}"
+  />
+`;
