@@ -58,7 +58,7 @@ export const data = {
   },
   warranty: {
     title: {
-      conntent : '1-year warranty boost',
+      content: '1-year warranty boost',
       priority: 2,
     },
     texts: [
