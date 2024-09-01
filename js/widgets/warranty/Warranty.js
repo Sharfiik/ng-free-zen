@@ -22,7 +22,7 @@ export const Warranty = (data) => {
           ${texts.map((text) => `<p class="warranty__copy">${text}</p>`).join('')}
         </div>
         <div class="warranty__image-block">
-        ${Image(image)}
+          ${Image(image)}
         </div>
       </div>
     </section>
