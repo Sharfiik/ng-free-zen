@@ -86,7 +86,10 @@ export const data = {
     },
   },
   cashback: {
-    title: 'and cashback!',
+    title: {
+      content: 'and cashback!',
+      priority: 2,
+    },
     texts: [
       'It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it.',
       'We gave it a thought and made cashback way more friendly.',
