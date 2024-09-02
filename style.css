@@ -1,4 +1,3 @@
-/*mixin*/
 /* reset */
 *,
 *::before,
@@ -47,25 +46,36 @@ select {
   outline: none;
 }
 
-/* fonts */
-@font-face {
-  font-family: "Nunito";
-  src: url("assets/fonts/Nunito/Nunito-Regular.woff2") format("woff2");
-  src: url("assets/fonts/Nunito/Nunito-Regular.woff") format("woff");
-  src: url("assets/fonts/Nunito/Nunito-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+.app.light {
+  --color-primary: #000;
+  --bg-primary: #fff;
+  --bg-menu: #fff;
+  --bg-brands-primary: #000;
+  --bg-links-primary: #222;
+  --bg-burger: #000;
+  --bg-color-select: #fff;
+  --bb-primary: #aaa;
+  --color-copy-primary: #000;
+  --color-menu: #000;
+  --color-select: #000;
+  --color-arrow: #000;
 }
-@font-face {
-  font-family: "Nunito";
-  src: url("assets/fonts/Nunito/Nunito-Bold.woff2") format("woff2");
-  src: url("assets/fonts/Nunito/Nunito-Bold.woff") format("woff");
-  src: url("assets/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+.app.dark {
+  --color-primary: #fff;
+  --bg-primary: #484848;
+  --bg-menu: #484848;
+  --bg-brands-primary: #fff;
+  --bg-burger: #fff;
+  --bg-links-primary: #484848;
+  --bg-color-select: #484848;
+  --bb-primary: #fff;
+  --color-copy-primary: #fff;
+  --color-select: #fff;
+  --color-menu: #fff;
+  --color-arrow: #fff;
 }
+
+/*mixin*/
 /* global */
 body {
   padding-top: 50px;
@@ -85,6 +95,25 @@ img {
   width: 100%;
 }
 
+/* fonts */
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/Nunito-Regular.woff2") format("woff2");
+  src: url("assets/fonts/Nunito/Nunito-Regular.woff") format("woff");
+  src: url("assets/fonts/Nunito/Nunito-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/Nunito-Bold.woff2") format("woff2");
+  src: url("assets/fonts/Nunito/Nunito-Bold.woff") format("woff");
+  src: url("assets/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 /* header */
 .header {
   position: fixed;
@@ -213,6 +242,31 @@ img {
   bottom: 0;
   left: 0;
   transition: all 0.5s;
+}
+
+/* column */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.column__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.column__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.column .column img {
+  display: block;
+  height: 40px;
+}
+.column__item {
+  display: flex;
 }
 
 /* download */
@@ -349,7 +403,7 @@ img {
   justify-content: center;
   width: 100%;
   height: 50px;
-  border: 1px solid #aaa;
+  border: 1px solid var(--bb-primary);
   border-radius: 30px;
 }
 
@@ -401,31 +455,6 @@ img {
 .footer__dev img {
   display: block;
   height: 46px;
-}
-
-/* column */
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.column__title {
-  font-size: 16px;
-  font-weight: 700;
-}
-.column__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 14px;
-  font-weight: 400;
-}
-.column .column img {
-  display: block;
-  height: 40px;
-}
-.column__item {
-  display: flex;
 }
 
 /* modal */
@@ -534,35 +563,6 @@ img {
   font-size: 16px;
   border: 1px solid #222;
   border-radius: 30px;
-}
-
-.app.light {
-  --color-primary: #000;
-  --bg-primary: #fff;
-  --bg-menu: #fff;
-  --bg-brands-primary: #000;
-  --bg-links-primary: #222;
-  --bg-burger: #000;
-  --bg-color-select: #fff;
-  --bb-primary: #000;
-  --color-copy-primary: #000;
-  --color-menu: #000;
-  --color-select: #000;
-  --color-arrow: #000;
-}
-.app.dark {
-  --color-primary: #fff;
-  --bg-primary: #484848;
-  --bg-menu: #484848;
-  --bg-brands-primary: #fff;
-  --bg-burger: #fff;
-  --bg-links-primary: #484848;
-  --bg-color-select: #484848;
-  --bb-primary: #fff;
-  --color-copy-primary: #fff;
-  --color-select: #fff;
-  --color-menu: #fff;
-  --color-arrow: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
