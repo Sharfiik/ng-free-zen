@@ -5,15 +5,15 @@
 /**
  * @function Button
  * @param {ButtonData} data
- * @param {string} ClassName
+ * @param {string} className
  * @param {string} type
  * @param {string} id
  * @returns {string} HTML
  */
 
-export const Button = (data, ClassName, type, id) => {
+export const Button = (data, className, type, id) => {
   return `
-    <button class="${ClassName}"
+    <button class="${className}"
      type="${type}"
      id="${id}"
      >
