@@ -5,7 +5,7 @@ import { Theme } from '../../fuatures/Theme/index.js';
 import { Burger } from '../../fuatures/Burger/Burger.js';
 
 /**
- * @typedef {import('./types.ts').HeaderData} HeaderData
+ * @typedef {import('./types').HeaderData} HeaderData
  */
 
 /**

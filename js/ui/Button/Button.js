@@ -1,5 +1,5 @@
 /**
- * @typedef {import('./types.ts').ButtonData} ButtonData
+ * @typedef {import('./types').ButtonData} ButtonData
  */
 
 /**

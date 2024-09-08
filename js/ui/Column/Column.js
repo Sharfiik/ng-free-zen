@@ -1,5 +1,5 @@
 /**
- * @typedef {import('./types.ts').CategoryData} CategoryData
+ * @typedef {import('./types').CategoryData} CategoryData
  */
 
 /**

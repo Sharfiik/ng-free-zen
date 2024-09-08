@@ -3,7 +3,7 @@ import { Link } from '../../ui/Link/Link.js';
 import { Image } from '../../ui/Images/Image.js';
 
 /**
- * @typedef {import('./types.ts').DownloadData} DownloadData
+ * @typedef {import('./types').DownloadData} DownloadData
  */
 
 /**

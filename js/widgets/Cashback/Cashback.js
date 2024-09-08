@@ -2,7 +2,7 @@ import { Title } from '../../ui/Title/Title.js';
 import { Button } from '../../ui/Button/Button.js';
 
 /**
- * @typedef {import('./types.ts').CashbackData} CashbackData
+ * @typedef {import('./types').CashbackData} CashbackData
  */
 
 /**

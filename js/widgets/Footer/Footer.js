@@ -2,7 +2,7 @@ import { Column } from '../../ui/Column/Column.js';
 import { Developer } from '../../ui/Developer/Developer.js';
 
 /**
- * @typedef {import('./types.ts').FooterData} FooterData
+ * @typedef {import('./types').FooterData} FooterData
  */
 
 /**
