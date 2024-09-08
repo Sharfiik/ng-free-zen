@@ -1,8 +1,8 @@
-import { Logo } from '../../fuatures/Logo/Logo.js';
-import { Navigation } from '../../fuatures/Navigation/Navigation.js';
+import { Logo } from '../../fuatures/Logo/index.js';
+import { Navigation } from '../../fuatures/Navigation/index.js';
 import { Lang } from '../../fuatures/Lang/index.js';
 import { Theme } from '../../fuatures/Theme/index.js';
-import { Burger } from '../../fuatures/Burger/Burger.js';
+import { Burger } from '../../fuatures/Burger/index.js';
 
 /**
  * @typedef {import('./types').HeaderData} HeaderData

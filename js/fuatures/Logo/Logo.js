@@ -1,4 +1,4 @@
-import { HeaderLogo } from '../../ui/Icons/HeaderLogo/HeaderLogo.js';
+import { HeaderLogo } from '../../ui/Icons/HeaderLogo/index.js';
 
 /**
  * @function logo

@@ -1,4 +1,4 @@
-import { IconLang } from '../../ui/Icons/IconLang/IconLang.js';
+import { IconLang } from '../../ui/Icons/IconLang/index.js';
 
 /**
  * @typedef {import('./types').LangsData} LangsData

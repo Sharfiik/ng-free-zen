@@ -1,5 +1,6 @@
-import { Column } from '../../ui/Column/Column.js';
-import { Developer } from '../../ui/Developer/Developer.js';
+import { Column } from '../../ui/Column/index.js';
+import { Developer } from '../../ui/Developer/index.js';
+import { FooterLogo } from '../../ui/Icons/FooterLogo/index.js';
 
 /**
  * @typedef {import('./types').FooterData} FooterData
@@ -21,9 +22,7 @@ export const Footer = (data) => {
           ${categories.map((category) => Column(category)).join('')}
         </div>
         <div class="footer__info">
-            <a class="footer__logo" href="https://example.com">
-              <img src="assets/icons/logo2.svg" alt="logo" />
-            </a>
+          ${FooterLogo()}
           ${info.texts.map((text) => `<p class="footer__copy">${text}</p>`).join('')}
           ${Developer(info)}
         </div>
