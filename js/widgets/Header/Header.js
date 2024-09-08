@@ -20,7 +20,9 @@ export const Header = (data) => {
     <header class="header" id="header">
       <div class="header__wrapper">
         ${Logo('header__logo')}
-        ${Navigation(data.navigation)}
+        <nav class="header__nav">
+          ${Navigation(data.navigation)}
+        </nav>
         <div class="header__actions">
           ${Lang(data.langs)}
           ${Theme('header__theme')}
