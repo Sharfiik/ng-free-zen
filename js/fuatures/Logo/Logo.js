@@ -11,7 +11,8 @@ export const Logo = (className) => {
   return `
   <button class="${className}"
     type="button"
-    id="logo">
+    id="logo"
+    >
     ${HeaderLogo()}
   </button>
   `;
