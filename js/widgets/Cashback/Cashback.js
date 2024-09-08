@@ -1,8 +1,8 @@
-import { Title } from '../../ui/Title/Title.js';
-import { Button } from '../../ui/Button/Button.js';
+import { Title } from '../../ui/Title/index.js';
+import { Button } from '../../ui/Button/index.js';
 
 /**
- * @typedef {import('./types.ts').CashbackData} CashbackData
+ * @typedef {import('./types').CashbackData} CashbackData
  */
 
 /**

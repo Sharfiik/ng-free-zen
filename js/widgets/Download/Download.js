@@ -1,9 +1,9 @@
-import { Title } from '../../ui/Title/Title.js';
-import { Link } from '../../ui/Link/Link.js';
-import { Image } from '../../ui/Images/Image.js';
+import { Title } from '../../ui/Title/index.js';
+import { Link } from '../../ui/Link/index.js';
+import { Image } from '../../ui/Images/index.js';
 
 /**
- * @typedef {import('./types.ts').DownloadData} DownloadData
+ * @typedef {import('./types').DownloadData} DownloadData
  */
 
 /**
