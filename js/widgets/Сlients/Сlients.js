@@ -21,7 +21,7 @@ export const Clients = (data) => {
               src="${brand.logo.lightSource}"
               alt="${brand.name}"
             />
-          </li>
+            </li>
           `).join('')}
         </ul>
       </div>
