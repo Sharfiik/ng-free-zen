@@ -20,7 +20,7 @@ export const Clients = (data) => {
             <img
               src="${brand.logo.lightSource}"
               alt="${brand.name}"
-              />
+            />
           </li>
           `).join('')}
         </ul>
