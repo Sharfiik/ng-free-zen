@@ -1,5 +1,4 @@
-.app {
-  &.light {
+.root[data-theme="light"] {
     --color-primary: #000;
     --bg-primary: #fff;
     --bg-menu: #fff;
@@ -14,7 +13,7 @@
     --color-arrow: #000;
   }
 
-  &.dark {
+  .root[data-theme="dark"] {
     --color-primary: #fff;
     --bg-primary: #484848;
     --bg-menu: #484848;
@@ -28,4 +27,3 @@
     --color-menu: #fff;
     --color-arrow: #fff;
   }
-}
