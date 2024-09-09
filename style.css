@@ -46,7 +46,7 @@ select {
   outline: none;
 }
 
-.app.light {
+.root[data-theme=light] {
   --color-primary: #000;
   --bg-primary: #fff;
   --bg-menu: #fff;
@@ -60,7 +60,8 @@ select {
   --color-select: #000;
   --color-arrow: #000;
 }
-.app.dark {
+
+.root[data-theme=dark] {
   --color-primary: #fff;
   --bg-primary: #484848;
   --bg-menu: #484848;
@@ -83,7 +84,7 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-body .app {
+body .root {
   background: var(--bg-primary);
 }
 
