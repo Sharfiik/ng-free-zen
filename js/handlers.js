@@ -12,6 +12,10 @@ import { IconMoon } from './ui/Icons/IconMoon/index.js';
  * @param {ClientsData} brandsFromAPI
  */
 
+/**********************************************
+  Изменение темы
+**********************************************/
+
 export const onThemeClick = (event, brandsFromAPI) => {
   /** @type {NodeListOf<HTMLImageElement>} */
   const $root = document.querySelector('#root');
@@ -41,3 +45,41 @@ export const onThemeClick = (event, brandsFromAPI) => {
     });
   }
 };
+
+/**********************************************
+  Скрол на верх
+**********************************************/
+
+/**
+ * @function handleLogoClick
+ * @returns {void}
+ */
+
+export const handleLogoClick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+/**********************************************
+  Вызов меню бургера
+**********************************************/
+
+/**
+ * @function handleBurgerClick
+ * @returns {void}
+ */
+
+export const handleBurgerClick = () => {
+  const $burger = document.querySelector('#burger');
+  const $menu = document.querySelector('#menu');
+
+  $burger.classList.toggle('active');
+  $menu.classList.toggle('active');
+};
+
+/**********************************************
+  Закрыти меню бургера при нажатие на секцию и
+  плавный скрол
+**********************************************/
