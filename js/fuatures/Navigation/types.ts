@@ -1,4 +1,1 @@
-export type NavigationData = {
-  key: string;
-  name: string;
-};
+export type { NavigationData } from '../../types';

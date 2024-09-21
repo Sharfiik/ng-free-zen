@@ -1,3 +1,1 @@
-export type ButtonData = {
-  buttonText: string;
-};
+export type { ButtonData } from '../../types';

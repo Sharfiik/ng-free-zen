@@ -6,7 +6,7 @@ import { IconLang } from '../../ui/Icons/IconLang/index.js';
 
 /**
  * @function Lang
- * @param {LangsData} data
+ * @param {LangsData[]} data
  * @returns {string} HTML
  */
 

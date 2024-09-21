@@ -1,4 +1,1 @@
-export type LangsData = {
-  key: string[];
-  name: string [];
-};
+export type { LangsData } from '../../types';
