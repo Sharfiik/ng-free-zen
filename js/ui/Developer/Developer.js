@@ -1,10 +1,10 @@
 /**
- * @typedef {import('./types').DeveloperData} DeveloperData
+ * @typedef {import('./types').InfoData} InfoData
  */
 
 /**
  * @function Developer
- * @param {DeveloperData} data
+ * @param {InfoData} data
  * @returns {string} HTML
  */
 

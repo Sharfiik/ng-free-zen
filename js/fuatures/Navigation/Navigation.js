@@ -4,7 +4,7 @@
 
 /**
  * @function Navigation
- * @param {NavigationData} data
+ * @param {NavigationData[]} data
  * @returns {string} HTML
  */
 
