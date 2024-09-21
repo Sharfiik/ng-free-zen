@@ -149,3 +149,5 @@ export type AppData = {
   clients: BrandsFromAPI;
   secondaryInfo: FooterData;
 };
+
+/*********************************************/
