@@ -1,4 +1,4 @@
-export const dataFromAPI = {
+export const dataEnFromAPI = {
   primaryInfo: {
     langs: [
       {

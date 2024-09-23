@@ -4,7 +4,8 @@
  * @returns {string} HTML
  */
 
-export const Theme = (className) => `
+export const Theme = (className) =>
+  `
   <button class="${className}"
     type="button"
     id="theme"

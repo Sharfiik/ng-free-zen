@@ -1,5 +1,10 @@
+import { dataEnFromAPI } from './api/index.js';
+import { dataRuFromAPI } from './api/index.js';
+import { App } from './app.js';
+import { addHandlers } from './addHandlers.js';
 import { IconSun } from './ui/Icons/IconSun/index.js';
 import { IconMoon } from './ui/Icons/IconMoon/index.js';
+import { Lang } from './fuatures/Lang/index.js';
 
 /**
  * @typedef {import('./widgets/Сlients/types.js').BrandsFromAPI} BrandsFromAPI
@@ -34,6 +39,7 @@ export const onThemeClick = (event, brandsFromAPI) => {
     $brandNodes.forEach ((brand, index) => {
       brand.src = brandsFromAPI[index].logo.darkSource;
     });
+
   }
 
   if (currentTheme === 'dark') {
@@ -44,6 +50,7 @@ export const onThemeClick = (event, brandsFromAPI) => {
       brand.src = brandsFromAPI[index].logo.lightSource;
     });
   }
+  addHandlers();
 };
 
 /**********************************************
@@ -105,4 +112,29 @@ export const handleBurgerClose = (event) => {
   const $burger = document.querySelector('#burger');
   $nav?.classList.toggle('active');
   $burger?.classList.toggle('active');
+};
+
+/**********************************************
+ Изменение языка
+**********************************************/
+
+/**
+ * @function onLangChange
+ * @description Change language
+ * @param {Event} event
+ */
+
+export const onLangChange = (event) => {
+  const $langSelect = /** @type {HTMLSelectElement | null} */ (event.target);
+  /** @type {HTMLElement | null} */
+  const $root = document.querySelector('#root');
+
+  if (!$langSelect || !$root) return;
+
+  const selectedLang = $langSelect.value;
+  localStorage.setItem('currentLang', selectedLang)
+  const data = selectedLang === 'en' ? dataEnFromAPI : dataRuFromAPI;
+  $root.innerHTML = App(data);
+
+  addHandlers();
 };
