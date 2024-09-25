@@ -46,7 +46,7 @@ select {
   outline: none;
 }
 
-.root[data-theme=light] {
+.root.light {
   --color-primary: #000;
   --bg-primary: #fff;
   --bg-menu: #fff;
@@ -61,7 +61,7 @@ select {
   --color-arrow: #000;
 }
 
-.root[data-theme=dark] {
+.root.dark {
   --color-primary: #fff;
   --bg-primary: #484848;
   --bg-menu: #484848;

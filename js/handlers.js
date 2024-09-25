@@ -4,7 +4,10 @@ import { App } from './app.js';
 import { addHandlers } from './addHandlers.js';
 import { IconSun } from './ui/Icons/IconSun/index.js';
 import { IconMoon } from './ui/Icons/IconMoon/index.js';
-import { Lang } from './fuatures/Lang/index.js';
+
+/**********************************************
+  Изменение темы
+**********************************************/
 
 /**
  * @typedef {import('./widgets/Сlients/types.js').BrandsFromAPI} BrandsFromAPI
@@ -17,44 +20,38 @@ import { Lang } from './fuatures/Lang/index.js';
  * @param {BrandsFromAPI} brandsFromAPI
  */
 
-/**********************************************
-  Изменение темы
-**********************************************/
-
 export const onThemeClick = (event, brandsFromAPI) => {
   /** @type {NodeListOf<HTMLImageElement>} */
   const $brandNodes = document.querySelectorAll('[data-id="brand"]');
-  const $themeButton = /** @type {HTMLElement | null} */ (event.currentTarget);
+  const $themeButton = /** @type {HTMLElement} */ (event.currentTarget);
   /** @type {HTMLElement | null} */
   const $root = document.querySelector('#root');
 
-  if (!$brandNodes  || !$themeButton || !$root) return;
-
-  const currentTheme = $themeButton.dataset.theme;
+  const currentTheme = localStorage.getItem('currentTheme');
 
   if (currentTheme === 'light') {
-    $themeButton.dataset.theme = 'dark';
     $themeButton.innerHTML = IconSun();
-    $root.dataset.theme = 'dark';
+    $root?.classList.remove('light');
+    $root?.classList.add('dark');
+    localStorage.setItem('currentTheme', 'dark');
     $brandNodes.forEach ((brand, index) => {
       brand.src = brandsFromAPI[index].logo.darkSource;
     });
-
   }
 
   if (currentTheme === 'dark') {
-    $themeButton.dataset.theme = 'light';
     $themeButton.innerHTML = IconMoon();
-    $root.dataset.theme = 'light';
+    $root?.classList.remove('dark');
+    $root?.classList.add('light');
+    localStorage.setItem('currentTheme', 'light');
     $brandNodes.forEach ((brand, index) => {
       brand.src = brandsFromAPI[index].logo.lightSource;
     });
   }
-  addHandlers();
 };
 
 /**********************************************
-  Скрол на верх
+  Скрол по клике на лого
 **********************************************/
 
 /**
@@ -65,12 +62,12 @@ export const onThemeClick = (event, brandsFromAPI) => {
 export const handleLogoClick = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: 'smooth',
   });
 };
 
 /**********************************************
-  Вызов меню бургера
+  Открытие и закрытие бургера
 **********************************************/
 
 /**
@@ -87,8 +84,7 @@ export const handleBurgerClick = () => {
 };
 
 /**********************************************
-  Закрыти меню бургера при нажатие на секцию и
-  плавный скрол
+  Закрытие бургера при скроле
 **********************************************/
 
 /**
@@ -115,7 +111,7 @@ export const handleBurgerClose = (event) => {
 };
 
 /**********************************************
- Изменение языка
+ Смена языка
 **********************************************/
 
 /**
