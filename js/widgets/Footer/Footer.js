@@ -1,32 +1,34 @@
 import { Column } from '../../ui/Column/index.js';
 import { Developer } from '../../ui/Developer/index.js';
-import { FooterLogo } from '../../ui/Icons/FooterLogo/index.js';
 
 /**
- * @typedef {import('./types').FooterData} FooterData
+ * @typedef {import('./types').SecondaryInfoData} SecondaryInfoData
  */
 
 /**
  * @function Footer
- * @param {FooterData} data
+ * @param {SecondaryInfoData} data
  * @returns {string} HTML
  */
 
 export const Footer = (data) => {
-  const {categories, info} = data;
-
+  const { categories, info } = data;
   return `
-    <footer class="footer" id="footer">
-      <div class="footer__wrapper">
-        <div class="footer__columns">
-          ${categories.map((category) => Column(category)).join('')}
-        </div>
-        <div class="footer__info">
-          ${FooterLogo()}
-          ${info.texts.map((text) => `<p class="footer__copy">${text}</p>`).join('')}
-          ${Developer(info)}
-        </div>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__columns">
+        ${categories.map((category) => Column(category)).join('')}
       </div>
-    </footer>
+      <div class="footer__info">
+        <a class="footer__logo" href="${info.logo.url}">
+          <img src="${info.logo.content.data}" alt="ZEN logo">
+        </a>
+        ${info.texts
+          .map((text) => `<p class="footer__copy">${text}</p>`)
+          .join('')}
+        ${Developer(info)}
+      </div>
+    </div>
+  </footer>
   `;
 };

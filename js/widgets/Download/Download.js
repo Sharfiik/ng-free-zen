@@ -13,8 +13,7 @@ import { Image } from '../../ui/Images/index.js';
  */
 
 export const Download = (data) => {
-  const {title, texts, links, image} = data;
-
+  const {title, texts, links, images} = data;
   return `
     <section class="download" id="download">
       <div class="download__wrapper">
@@ -26,7 +25,7 @@ export const Download = (data) => {
           </div>
         </div>
         <div class="download__image-block">
-          ${Image(image)}
+          ${Image(images)}
         </div>
       </div>
     </section>

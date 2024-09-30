@@ -12,7 +12,7 @@ import { Image } from '../../ui/Images/index.js';
  */
 
 export const Care = (data) => {
-  const {title, texts, image} = data;
+  const {title, texts, images} = data;
 
   return `
     <section class="care" id="care">
@@ -22,7 +22,7 @@ export const Care = (data) => {
           ${texts.map((text) => `<p class="care__copy">${text}</p>`).join('')}
         </div>
         <div class="care__image-block">
-          ${Image(image)}
+          ${Image(images)}
         </div>
       </div>
     </section>

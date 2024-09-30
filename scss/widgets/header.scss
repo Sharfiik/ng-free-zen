@@ -14,20 +14,20 @@
     padding: 0 15px;
     height: 50px;
   }
-  
+
   &__logo {
     width: 77px;
     height: 30px;
     color: var(--color-primary);
   }
-  
+
   &__logo svg {
     height: 100%;
     fill: currentColor;
   }
-  
+
   /* .header__nav {} */
-  
+
   &__actions {
     margin-left: auto;
     // display: flex;
@@ -35,7 +35,7 @@
     @include flex_align_center;
     gap: 20px;
   }
-  
+
   &__lang {
     position: relative;
     // display: flex;
@@ -48,7 +48,7 @@
     border-radius: 4px;
     overflow: hidden;
   }
-  
+
   &__lang svg {
     position: absolute;
     z-index: 1;
@@ -59,7 +59,7 @@
     height: 6px;
     fill: currentColor;
   }
-  
+
   &__lang select {
     padding-left: 8px;
     height: 100%;
@@ -67,7 +67,7 @@
     color: var(--color-select);
     background: var(--bg-color-select);
   }
-  
+
   &__theme {
     width: 26px;
     height: 26px;

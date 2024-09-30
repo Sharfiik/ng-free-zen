@@ -1,1 +1,1 @@
-export type { FooterData } from '../../types';
+export type { SecondaryInfoData } from '../../types';

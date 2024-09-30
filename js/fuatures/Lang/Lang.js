@@ -1,5 +1,4 @@
-import { IconLang } from '../../ui/Icons/IconLang/index.js';
-
+import { Select } from '../../ui/Select/index.js';
 /**
  * @typedef {import('./types').LangsData} LangsData
  */
@@ -10,11 +9,10 @@ import { IconLang } from '../../ui/Icons/IconLang/index.js';
  * @returns {string} HTML
  */
 
-export const Lang = (data) => `
+export const Lang = (data) => {
+  return `
     <label class="header__lang">
-      ${IconLang()}
-      <select id="lang">
-        ${data.map((lang) => `<option value="${lang.key}">${lang.name}</option>`).join('')}
-      </select>
+      ${Select(data)}
     </label>
-`;
+  `;
+};

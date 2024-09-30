@@ -1,5 +1,5 @@
 import { Logo } from '../../fuatures/Logo/index.js';
-import { Navigation } from '../../fuatures/Navigation/index.js';
+import { Navigations } from '../../fuatures/Navigation/index.js';
 import { Lang } from '../../fuatures/Lang/index.js';
 import { Theme } from '../../fuatures/Theme/index.js';
 import { Burger } from '../../fuatures/Burger/index.js';
@@ -21,7 +21,7 @@ export const Header = (data) => {
       <div class="header__wrapper">
         ${Logo('header__logo')}
         <nav class="header__nav">
-          ${Navigation(data.navigation)}
+          ${Navigations(data.navigation)}
         </nav>
         <div class="header__actions">
           ${Lang(data.langs)}
@@ -31,4 +31,5 @@ export const Header = (data) => {
       </div>
     </header>
   `;
+
 };

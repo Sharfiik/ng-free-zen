@@ -1,1 +1,1 @@
-export { Navigation } from './Navigation.js';
+export { Navigations } from './Navigation.js';
