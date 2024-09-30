@@ -1,5 +1,4 @@
-import { dataEnFromAPI } from './api/index.js';
-import { dataRuFromAPI } from './api/index.js';
+import { API_BASE_URL } from './API_BASE_URL.js';
 import { App } from './app.js';
 import { addHandlers } from './addHandlers.js';
 import { IconSun } from './ui/Icons/IconSun/index.js';
@@ -89,6 +88,7 @@ export const handleBurgerClick = () => {
 
 /**
  * @function handleSectionClick
+ * @param {???} event
  * @returns {void}
  */
 
@@ -98,14 +98,31 @@ export const handleBurgerClose = (event) => {
   const targetId = event.target.getAttribute('href').substring(1);
   const targetElement = document.getElementById(targetId);
 
-  if (targetElement) {
-    targetElement.scrollIntoView({
-      behavior: 'smooth'
+
+  if (event.target.tagName === 'A') {
+    event.preventDefault();
+
+    const $clickedLink = event.target;
+    const targetId = $clickedLink.getAttribute('href').substring(1);
+
+    const $header = /** @type { HTMLElement | null } */ document.querySelector('header');
+    const $targetElement = /** @type { HTMLElement | null } */ document.getElementById(targetId);
+
+    if (!$header || !$targetElement) return;
+
+    const headerOffset = $header.offsetHeight;
+    const elementPosition = $targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth',
     });
-  }
+  };
 
   const $nav = document.querySelector('#menu');
   const $burger = document.querySelector('#burger');
+
   $nav?.classList.toggle('active');
   $burger?.classList.toggle('active');
 };
@@ -116,21 +133,21 @@ export const handleBurgerClose = (event) => {
 
 /**
  * @function onLangChange
- * @description Change language
- * @param {Event} event
+ * @returns {Promise<void>}
  */
 
-export const onLangChange = (event) => {
-  const $langSelect = /** @type {HTMLSelectElement | null} */ (event.target);
-  /** @type {HTMLElement | null} */
+export const onLangChange = async (event) => {
+  const currentLang = event.target.value;
+  localStorage.setItem('currentLang', currentLang);
   const $root = document.querySelector('#root');
+  if (!$root) return;
 
-  if (!$langSelect || !$root) return;
-
-  const selectedLang = $langSelect.value;
-  localStorage.setItem('currentLang', selectedLang)
-  const data = selectedLang === 'en' ? dataEnFromAPI : dataRuFromAPI;
-  $root.innerHTML = App(data);
-
-  addHandlers();
+  try {
+    const response = await fetch(`${API_BASE_URL}/${currentLang}.json`);
+    const responseData = await response.json();
+    $root.innerHTML = App(responseData);
+    addHandlers(responseData);
+  } catch (error) {
+    console.log('error', error);
+  }
 };

@@ -12,6 +12,7 @@
  */
 
 export const Button = (data, className, type, id) => {
+  
   return `
     <button class="${className}"
      type="${type}"

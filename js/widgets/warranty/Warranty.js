@@ -12,7 +12,7 @@ import { Image } from '../../ui/Images/index.js';
  */
 
 export const Warranty = (data) => {
-  const {title, texts, image} = data;
+  const {title, texts, images} = data;
 
   return `
     <section class="warranty" id="warranty">
@@ -22,7 +22,7 @@ export const Warranty = (data) => {
           ${texts.map((text) => `<p class="warranty__copy">${text}</p>`).join('')}
         </div>
         <div class="warranty__image-block">
-          ${Image(image)}
+          ${Image(images)}
         </div>
       </div>
     </section>

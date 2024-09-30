@@ -1,1 +1,1 @@
-export type { NavigationData } from '../../types';
+export type { Navigation } from '../../types';

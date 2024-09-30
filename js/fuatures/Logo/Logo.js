@@ -7,7 +7,7 @@ import { HeaderLogo } from '../../ui/Icons/HeaderLogo/index.js';
  */
 
 export const Logo = (className) => {
-
+  
   return `
   <button class="${className}"
     type="button"

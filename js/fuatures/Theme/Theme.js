@@ -9,6 +9,7 @@ import { IconSun } from '../../ui/Icons/IconSun/index.js';
  */
 
 export const Theme = (className) => {
+  
   const currentTheme = localStorage.getItem('currentTheme') ?? 'light';
   const iconSrc = currentTheme === 'light' ? IconMoon() : IconSun();
 

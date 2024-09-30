@@ -7,8 +7,8 @@ export type TitleData = {
 };
 
 export type ImageData = {
-  source: string;
   description: string;
+  source: string;
 };
 
 export type LinkData = {
@@ -25,14 +25,14 @@ export type LangsData = {
   name: string;
 };
 
-export type NavigationData = {
-  key: string;
+export type Navigation = {
+  anchor: string;
   name: string;
 };
 
 export type HeaderData = {
   langs: LangsData[];
-  navigation: NavigationData[];
+  navigation: Navigation[];
 };
 
 
@@ -44,7 +44,7 @@ export type DownloadData = {
   title: TitleData;
   texts: string[];
   links: LinkData[];
-  image: ImageData;
+  images: ImageData;
 };
 
 /**********************************************
@@ -54,7 +54,7 @@ export type DownloadData = {
 export type WarrantyData = {
   title: TitleData;
   texts: string[];
-  image: ImageData;
+  images: ImageData;
 };
 
 /**********************************************
@@ -64,7 +64,7 @@ export type WarrantyData = {
 export type CareData = {
   title: TitleData;
   texts: string[];
-  image: ImageData;
+  images: ImageData;
 };
 
 /**********************************************
@@ -88,51 +88,48 @@ export type Source = {
   darkSource: string;
 };
 
-export type Client = {
+export type Brands = {
   name: string;
   logo: Source;
 };
 
-export type BrandsFromAPI = {
-  brands: Client[];
+export type ClientsData = {
+  brands: Brands[];
 };
+
 
 /**********************************************
   Footer types
 **********************************************/
 
-export type ContentData = {
+type ContentData = {
   type: string;
   data: string;
 };
 
-export type LinkDataCategory = {
+type InfoLinkData = {
   url: string;
   content: ContentData;
 };
 
 export type CategoryData = {
   name: string;
-  links: LinkDataCategory[];
+  links: InfoLinkData[];
 };
 
-export type DeveloperData = {
+type InfoLogoData = {
   url: string;
   content: ContentData;
 };
 
 export type InfoData = {
+  logo: InfoLogoData;
   texts: string[];
-  developer: DeveloperData;
+  developer: InfoLogoData;
 };
 
-export type CategoriesData = {
-  name: string;
-  links: LinkDataCategory[];
-};
-
-export type FooterData = {
-  categories: CategoriesData[];
+export type SecondaryInfoData = {
+  categories: CategoryData[];
   info: InfoData;
 };
 
@@ -146,8 +143,8 @@ export type AppData = {
   warranty: WarrantyData;
   care: CareData;
   cashback: CashbackData;
-  clients: BrandsFromAPI;
-  secondaryInfo: FooterData;
+  clients: ClientsData;
+  secondaryInfo: SecondaryInfoData;
 };
 
 /*********************************************/

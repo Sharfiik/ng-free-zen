@@ -4,14 +4,15 @@
 
 /**
  * @function Developer
- * @param {InfoData} data
+ * @param {InfoData} info
  * @returns {string} HTML
  */
 
-export const Developer = (data) => {
+export const Developer = (info) => {
+  
   return `
     <a class="footer__dev" href="https://exaple.com">
-      <img src="${data.developer.content.data}" alt="Developer">
+      <img src="${info.developer.content.data}" alt="Developer">
     </a>
   `;
 };

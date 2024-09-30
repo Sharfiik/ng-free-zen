@@ -23,8 +23,9 @@ export const App = (data) => {
     ${Download(data.download)}
     ${Warranty(data.warranty)}
     ${Care(data.care)}
-    ${Clients(data.clients)}
     ${Cashback(data.cashback)}
+    ${Clients(data.clients)}
     ${Footer(data.secondaryInfo)}
-  `
-};
+    `
+  };
+

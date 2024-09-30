@@ -1,18 +1,21 @@
 /**
- * @typedef {import('./types').NavigationData} NavigationData
+ * @typedef {import('./types').Navigation} Navigation
  */
 
 /**
  * @function Navigation
- * @param {NavigationData[]} data
+ * @param {Navigation[]} navList
  * @returns {string} HTML
  */
 
-export const Navigation = (data) => `
+export const Navigations = (navList) => {
+
+  return`
     <ul class="menu" id="menu">
-      ${data.map((navItem) => `
+      ${navList.map((navItem) => `
         <li class="menu__item">
-          <a href="#${navItem.key}">${navItem.name}</a>
+          <a href="${navItem.anchor}" data-id="burger-link">${navItem.name}</a>
         </li>`).join('')}
     </ul>
-`;
+  `
+};

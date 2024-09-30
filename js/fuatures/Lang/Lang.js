@@ -1,5 +1,4 @@
-import { IconLang } from '../../ui/Icons/IconLang/index.js';
-
+import { Select } from '../../ui/Select/index.js';
 /**
  * @typedef {import('./types').LangsData} LangsData
  */
@@ -11,13 +10,9 @@ import { IconLang } from '../../ui/Icons/IconLang/index.js';
  */
 
 export const Lang = (data) => {
-  const currentLang = localStorage.getItem('currentLang') ?? 'ru';
   return `
     <label class="header__lang">
-      ${IconLang()}
-      <select id="lang">
-        ${data.map((lang) => `<option value="${lang.key}" ${lang.key === currentLang ? 'selected' : ''}>${lang.name}</option>`).join('')}
-      </select>
+      ${Select(data)}
     </label>
   `;
 };
