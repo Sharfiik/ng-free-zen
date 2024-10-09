@@ -22,9 +22,9 @@
     "noImplicitAny": false,
     "noImplicitReturns": true,
     "resolveJsonModule": false,
-    "declaration": true,
+    "declaration": true
   },
   "include": [
-    "js", "_temp/css/api", "_temp/ng-fre-zen on JS/api",
+    "js",
   ]
 }
